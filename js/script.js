@@ -1,0 +1,252 @@
+function testWebP(callback) {
+   var webP = new Image();
+   webP.onload = webP.onerror = function () {
+      callback(webP.height == 2);
+   };
+   webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+}
+testWebP(function (support) {
+   if (support == true) {
+      document.querySelector('body').classList.add('webp');
+   }
+});
+
+$(document).ready(function() {
+	$('.slide1, .menu-topText2, .menu-bottomText8').click(function (event) {
+		$('.slide1, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
+		$('.slide2, .slide3, .slide4, .slide6, .slide7, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.change-lang').addClass('dis-active');
+		function pause1() {
+			$('.image-item2, .image-item3, .image-item4, .image-item6, .image-item7, .image-item8, .textLeft2, .textLeft3, .textLeft4, .textLeft6, .textLeft7, .textLeft8, .textRight2, .textRight3, .textRight4, .textRight6, .textRight7, .textRight8').removeClass('is-active');
+			$('.image-item1, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft1, .textRight1, .textLeftNone, .textRightNone').addClass('is-active');
+			$('.header-left, .footer-right').removeClass('is-active');
+		};
+		setTimeout(pause1, 500);
+		function pause11() {
+			$('.footer-left, .header-right, .footer-leftBottom, .header-rightTop').removeClass('is-active');
+			$('.menu-topText1, .menu-bottomText1').addClass('is-active');
+			$('.change-lang').removeClass('dis-active');
+		}
+		setTimeout(pause11, 1000);
+	});
+});
+
+$(document).ready(function() {
+	$('.slide2, .menu-topText3, .menu-bottomText1, .menu-bottomTextNone').click(function (event) {
+		$('.slide2, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
+		$('.slide1, .slide3, .slide4, .slide6, .slide7, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.change-lang').addClass('dis-active');
+		function pause2() {
+			$('.image-item1, .image-item3, .image-item4, .image-item6, .image-item7, .image-item8, .textLeft1, .textLeft3, .textLeft4, .textLeft6, .textLeft7, .textLeft8, .textRight1, .textRight3, .textRight4, .textRight6, .textRight7, .textRight8').removeClass('is-active');
+			$('.image-item2, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft2, .textRight2, .textLeftNone, .textRightNone').addClass('is-active');
+			$('.header-left, .footer-right').removeClass('is-active');
+		};
+		setTimeout(pause2, 500);
+		function pause22() {
+			$('.footer-left, .header-right, .footer-leftBottom, .header-rightTop').removeClass('is-active');
+			$('.menu-topText2, .menu-bottomText2').addClass('is-active');
+			$('.change-lang').removeClass('dis-active');
+		};
+		setTimeout(pause22, 1000);
+	});
+});
+
+$(document).ready(function() {
+	$('.slide3, .menu-topText4, .menu-bottomText2').click(function (event) {
+		$('.slide3, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
+		$('.slide1, .slide2, .slide4, .slide6, .slide7, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.change-lang').addClass('dis-active');
+		function pause3() {
+			$('.image-item1, .image-item2, .image-item4, .image-item6, .image-item7, .image-item8, .textLeft2, .textLeft1, .textLeft4, .textLeft6, .textLeft7, .textLeft8, .textRight2, .textRight1, .textRight4, .textRight6, .textRight7, .textRight8').removeClass('is-active');
+			$('.image-item3, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft3, .textRight3, .textLeftNone, .textRightNone').addClass('is-active');
+			$('.header-left, .footer-right').removeClass('is-active');
+		};
+		setTimeout(pause3, 500);
+		function pause33() {
+			$('.footer-left, .header-right, .footer-leftBottom, .header-rightTop').removeClass('is-active');
+			$('.menu-topText3, .menu-bottomText3').addClass('is-active');
+			$('.change-lang').removeClass('dis-active');
+		};
+		setTimeout(pause33, 1000);
+	});
+});
+
+$(document).ready(function() {
+	$('.slide4, .menu-topText6, .menu-bottomText3').click(function (event) {
+		$('.slide4, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
+		$('.slide2, .slide3, .slide1, .slide6, .slide7, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.change-lang').addClass('dis-active');
+		function pause4() {
+			$('.image-item1, .image-item2, .image-item3, .image-item6, .image-item7, .image-item8, .textLeft2, .textLeft3, .textLeft1, .textLeft6, .textLeft7, .textLeft8, .textRight2, .textRight3, .textRight1, .textRight6, .textRight7, .textRight8').removeClass('is-active');
+			$('.image-item4, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft4, .textRight4, .textLeftNone, .textRightNone').addClass('is-active');
+			$('.header-left, .footer-right').removeClass('is-active');
+		};
+		setTimeout(pause4, 500);
+		function pause44() {
+			$('.footer-left, .header-right, .footer-leftBottom, .header-rightTop').removeClass('is-active');
+			$('.menu-topText4, .menu-bottomText4').addClass('is-active');
+			$('.change-lang').removeClass('dis-active');
+		};
+		setTimeout(pause44, 1000);
+	});
+});
+
+$(document).ready(function() {
+	$('.slide6, .menu-topText7, .menu-bottomText4').click(function (event) {
+		$('.slide6, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
+		$('.slide2, .slide3, .slide4, .slide1, .slide7, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.change-lang').addClass('dis-active');
+		function pause6() {
+			$('.image-item1, .image-item2, .image-item3, .image-item4, .image-item7, .image-item8, .textLeft2, .textLeft3, .textLeft4, .textLeft1, .textLeft7, .textLeft8, .textRight2, .textRight3, .textRight4, .textRight1, .textRight7, .textRight8').removeClass('is-active');
+			$('.image-item6, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft6, .textRight6, .textLeftNone, .textRightNone').addClass('is-active');
+			$('.header-left, .footer-right').removeClass('is-active');
+		};
+		setTimeout(pause6, 500);
+		function pause66() {
+			$('.footer-left, .header-right, .footer-leftBottom, .header-rightTop').removeClass('is-active');
+			$('.menu-topText6, .menu-bottomText6').addClass('is-active');
+			$('.change-lang').removeClass('dis-active');
+		};
+		setTimeout(pause66, 1000);
+	});
+});
+
+$(document).ready(function() {
+	$('.slide7, .menu-topText8, .menu-bottomText6').click(function (event) {
+		$('.slide7, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
+		$('.slide2, .slide3, .slide4, .slide6, .slide1, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.change-lang').addClass('dis-active');
+		function pause7() {
+			$('.image-item1, .image-item2, .image-item3, .image-item4, .image-item6, .image-item8, .textLeft2, .textLeft3, .textLeft4, .textLeft6, .textLeft1, .textLeft8, .textRight2, .textRight3, .textRight4, .textRight6, .textRight1, .textRight8').removeClass('is-active');
+			$('.image-item7, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft7, .textRight7, .textLeftNone, .textRightNone').addClass('is-active');
+			$('.header-left, .footer-right').removeClass('is-active');
+		};
+		setTimeout(pause7, 500);
+		function pause77() {
+			$('.footer-left, .header-right, .footer-leftBottom, .header-rightTop').removeClass('is-active');
+			$('.menu-topText7, .menu-bottomText7').addClass('is-active');
+			$('.change-lang').removeClass('dis-active');
+		};
+		setTimeout(pause77, 1000);
+	});
+});
+
+$(document).ready(function() {
+	$('.slide8, .menu-topText1, .menu-bottomText7, .menu-topTextNone').click(function (event) {
+		$('.slide8, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
+		$('.slide2, .slide3, .slide4, .slide6, .slide7, .slide1, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.change-lang').addClass('dis-active');
+		function pause8() {
+			$('.image-item1, .image-item2, .image-item3, .image-item4, .image-item6, .image-item7, .textLeft2, .textLeft3, .textLeft4, .textLeft6, .textLeft7, .textLeft1, .textRight2, .textRight3, .textRight4, .textRight6, .textRight7, .textRight1').removeClass('is-active');
+			$('.image-item8, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft8, .textRight8, .textLeftNone, .textRightNone').addClass('is-active');
+			$('.header-left, .footer-right').removeClass('is-active');
+		};
+		setTimeout(pause8, 500);
+		function pause88() {
+			$('.footer-left, .header-right, .footer-leftBottom, .header-rightTop').removeClass('is-active');
+			$('.menu-topText8, .menu-bottomText8').addClass('is-active');
+			$('.change-lang').removeClass('dis-active');
+		};
+		setTimeout(pause88, 1000);
+	});
+});
+
+const select = document.querySelector('select');
+const allLang = ['ru', 'ua'];
+const langArr = {
+	"topText1": {
+		"ru": "Мы счастливы",
+		"ua": "Ми щасливі",
+	},
+	"topText2": {
+		"ru": "на торжество,",
+		"ua": "на свято,",
+	},
+	"topText3": {
+		"ru": "которое состоится",
+		"ua": "яке відбудеться",
+	},
+	"topText4": {
+		"ru": "в ресторане &quot;Прага&quot;",
+		"ua": "у ресторані &quot;Прага&quot;",
+	},
+	"topText6": {
+		"ru": "Время государственной регистрации брака",
+		"ua": "Час державної реєстрації шлюбу",
+	},
+	"topText7": {
+		"ru": "Будем рады <br> видеть Вас",
+		"ua": "Будемо раді <br> бачити Вас",
+	},
+	"topText8": {
+		"ru": "Будет весело!!!",
+		"ua": "Буде весело!!!",
+	},
+	"topTextNone": {
+		"ru": "Мы счастливы",
+		"ua": "Ми щасливі",
+	},
+	"bottomText1": {
+		"ru": "пригласить Вас",
+		"ua": "запросити Вас",
+	},
+	"bottomText2": {
+		"ru": "посвящённое нашему бракосочетанию,",
+		"ua": "присвячене нашому одруженню,",
+	},
+	"bottomText3": {
+		"ru": "23 октября 2021 года в 18:00",
+		"ua": "23 жовтня 2021 року о 18:00",
+	},
+	"bottomText4": {
+		"ru": "г. Киев, проспект Академика Глушкова,1",
+		"ua": "м. Київ, проспект Академіка Глушкова,1",
+	},
+	"bottomText6": {
+		"ru": "в центральном ЗАГСе г.Киев - 16:00",
+		"ua": "у центральному РАГС м. Київ - 16:00",
+	},
+	"bottomText7": {
+		"ru": "на нашем празднике!",
+		"ua": "на нашому святі!",
+	},
+	"bottomText8": {
+		"ru": "Александр и Наталья",
+		"ua": "Олександр і Наталя",
+	},
+	"bottomTextNone": {
+		"ru": "пригласить Вас",
+		"ua": "запросити Вас",
+	},
+	"title": {
+		"ru": "Приглашение на свадьбу",
+		"ua": "Запрошення на весілля",
+	},
+};
+select.addEventListener('change', changeURLLanguage);
+
+// перенаправить на url с указанием языка
+function changeURLLanguage() {
+   let lang = select.value;
+   location.href = window.location.pathname + '#' + lang;
+   location.reload();
+};
+
+function changeLanguage() {
+	let hash = window.location.hash;
+	hash = hash.substr(1);
+	if (!allLang.includes(hash)) {
+		location.href = window.location.pathname + '#ru';
+		location.reload();
+	}
+	select.value = hash;
+	document.querySelector('title').innerHTML = langArr['title'][hash];
+	for (let key in langArr) {
+		let elem = document.querySelector('.menu-' + key);
+		if (elem) {
+			elem.innerHTML = langArr[key][hash];
+		}
+
+   }
+}
+changeLanguage();
