@@ -14,10 +14,11 @@ testWebP(function (support) {
 $(document).ready(function() {
 	$('.slide1, .menu-topText2, .menu-bottomText8').click(function (event) {
 		$('.slide1, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
-		$('.slide2, .slide3, .slide4, .slide6, .slide7, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.slide2, .slide3, .slide4, .slide6, .slide7, .slideVisitka, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomVis, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topTextVis, .menu-topText8').removeClass('is-active');
 		$('.change-lang').addClass('dis-active');
+		$('body').removeClass('scroll');
 		function pause1() {
-			$('.image-item2, .image-item3, .image-item4, .image-item6, .image-item7, .image-item8, .textLeft2, .textLeft3, .textLeft4, .textLeft6, .textLeft7, .textLeft8, .textRight2, .textRight3, .textRight4, .textRight6, .textRight7, .textRight8').removeClass('is-active');
+			$('.image-item2, .image-item3, .image-item4, .image-item6, .image-item7, .image-visitka, .image-item8, .textLeft2, .textLeft3, .textLeft4, .textLeft6, .textLeft7, .textLeft8, .textRight2, .textRight3, .textRight4, .textRight6, .textRight7, .textRight8').removeClass('is-active');
 			$('.image-item1, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft1, .textRight1, .textLeftNone, .textRightNone').addClass('is-active');
 			$('.header-left, .footer-right').removeClass('is-active');
 		};
@@ -34,10 +35,11 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('.slide2, .menu-topText3, .menu-bottomText1, .menu-bottomTextNone').click(function (event) {
 		$('.slide2, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
-		$('.slide1, .slide3, .slide4, .slide6, .slide7, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.slide1, .slide3, .slide4, .slide6, .slide7, .slideVisitka, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomVis, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topTextVis, .menu-topText8').removeClass('is-active');
 		$('.change-lang').addClass('dis-active');
+		$('body').removeClass('scroll');
 		function pause2() {
-			$('.image-item1, .image-item3, .image-item4, .image-item6, .image-item7, .image-item8, .textLeft1, .textLeft3, .textLeft4, .textLeft6, .textLeft7, .textLeft8, .textRight1, .textRight3, .textRight4, .textRight6, .textRight7, .textRight8').removeClass('is-active');
+			$('.image-item1, .image-item3, .image-item4, .image-item6, .image-item7, .image-visitka, .image-item8, .textLeft1, .textLeft3, .textLeft4, .textLeft6, .textLeft7, .textLeft8, .textRight1, .textRight3, .textRight4, .textRight6, .textRight7, .textRight8').removeClass('is-active');
 			$('.image-item2, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft2, .textRight2, .textLeftNone, .textRightNone').addClass('is-active');
 			$('.header-left, .footer-right').removeClass('is-active');
 		};
@@ -54,10 +56,11 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('.slide3, .menu-topText4, .menu-bottomText2').click(function (event) {
 		$('.slide3, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
-		$('.slide1, .slide2, .slide4, .slide6, .slide7, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.slide1, .slide2, .slide4, .slide6, .slide7, .slideVisitka, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomVis, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topTextVis, .menu-topText8').removeClass('is-active');
 		$('.change-lang').addClass('dis-active');
+		$('body').removeClass('scroll');
 		function pause3() {
-			$('.image-item1, .image-item2, .image-item4, .image-item6, .image-item7, .image-item8, .textLeft2, .textLeft1, .textLeft4, .textLeft6, .textLeft7, .textLeft8, .textRight2, .textRight1, .textRight4, .textRight6, .textRight7, .textRight8').removeClass('is-active');
+			$('.image-item1, .image-item2, .image-item4, .image-item6, .image-item7, .image-visitka, .image-item8, .textLeft2, .textLeft1, .textLeft4, .textLeft6, .textLeft7, .textLeft8, .textRight2, .textRight1, .textRight4, .textRight6, .textRight7, .textRight8').removeClass('is-active');
 			$('.image-item3, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft3, .textRight3, .textLeftNone, .textRightNone').addClass('is-active');
 			$('.header-left, .footer-right').removeClass('is-active');
 		};
@@ -74,10 +77,11 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('.slide4, .menu-topText6, .menu-bottomText3').click(function (event) {
 		$('.slide4, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
-		$('.slide2, .slide3, .slide1, .slide6, .slide7, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.slide2, .slide3, .slide1, .slide6, .slide7, .slideVisitka, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomVis, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topTextVis, .menu-topText8').removeClass('is-active');
 		$('.change-lang').addClass('dis-active');
+		$('body').removeClass('scroll');
 		function pause4() {
-			$('.image-item1, .image-item2, .image-item3, .image-item6, .image-item7, .image-item8, .textLeft2, .textLeft3, .textLeft1, .textLeft6, .textLeft7, .textLeft8, .textRight2, .textRight3, .textRight1, .textRight6, .textRight7, .textRight8').removeClass('is-active');
+			$('.image-item1, .image-item2, .image-item3, .image-item6, .image-item7, .image-visitka, .image-item8, .textLeft2, .textLeft3, .textLeft1, .textLeft6, .textLeft7, .textLeft8, .textRight2, .textRight3, .textRight1, .textRight6, .textRight7, .textRight8').removeClass('is-active');
 			$('.image-item4, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft4, .textRight4, .textLeftNone, .textRightNone').addClass('is-active');
 			$('.header-left, .footer-right').removeClass('is-active');
 		};
@@ -94,10 +98,11 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('.slide6, .menu-topText7, .menu-bottomText4').click(function (event) {
 		$('.slide6, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
-		$('.slide2, .slide3, .slide4, .slide1, .slide7, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.slide2, .slide3, .slide4, .slide1, .slide7, .slideVisitka, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomVis, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topTextVis, .menu-topText8').removeClass('is-active');
 		$('.change-lang').addClass('dis-active');
+		$('body').removeClass('scroll');
 		function pause6() {
-			$('.image-item1, .image-item2, .image-item3, .image-item4, .image-item7, .image-item8, .textLeft2, .textLeft3, .textLeft4, .textLeft1, .textLeft7, .textLeft8, .textRight2, .textRight3, .textRight4, .textRight1, .textRight7, .textRight8').removeClass('is-active');
+			$('.image-item1, .image-item2, .image-item3, .image-item4, .image-item7, .image-visitka, .image-item8, .textLeft2, .textLeft3, .textLeft4, .textLeft1, .textLeft7, .textLeft8, .textRight2, .textRight3, .textRight4, .textRight1, .textRight7, .textRight8').removeClass('is-active');
 			$('.image-item6, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft6, .textRight6, .textLeftNone, .textRightNone').addClass('is-active');
 			$('.header-left, .footer-right').removeClass('is-active');
 		};
@@ -112,12 +117,13 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-	$('.slide7, .menu-topText8, .menu-bottomText6').click(function (event) {
+	$('.slide7, .menu-topTextVis, .menu-bottomText6').click(function (event) {
 		$('.slide7, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
-		$('.slide2, .slide3, .slide4, .slide6, .slide1, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+		$('.slide2, .slide3, .slide4, .slide6, .slide1, .slideVisitka, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomVis, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topTextVis, .menu-topText8').removeClass('is-active');
 		$('.change-lang').addClass('dis-active');
+		$('body').removeClass('scroll');
 		function pause7() {
-			$('.image-item1, .image-item2, .image-item3, .image-item4, .image-item6, .image-item8, .textLeft2, .textLeft3, .textLeft4, .textLeft6, .textLeft1, .textLeft8, .textRight2, .textRight3, .textRight4, .textRight6, .textRight1, .textRight8').removeClass('is-active');
+			$('.image-item1, .image-item2, .image-item3, .image-item4, .image-item6, .image-visitka, .image-item8, .textLeft2, .textLeft3, .textLeft4, .textLeft6, .textLeft1, .textLeft8, .textRight2, .textRight3, .textRight4, .textRight6, .textRight1, .textRight8').removeClass('is-active');
 			$('.image-item7, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft7, .textRight7, .textLeftNone, .textRightNone').addClass('is-active');
 			$('.header-left, .footer-right').removeClass('is-active');
 		};
@@ -132,12 +138,34 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-	$('.slide8, .menu-topText1, .menu-bottomText7, .menu-topTextNone').click(function (event) {
-		$('.slide8, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
-		$('.slide2, .slide3, .slide4, .slide6, .slide7, .slide1, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topText8').removeClass('is-active');
+	$('.slideVisitka, .menu-topText8, .menu-bottomText7').click(function (event) {
+		$('.slideVisitka, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
+		$('.slide2, .slide3, .slide4, .slide6, .slide1, .slide7, .slide8, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomVis, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topTextVis, .menu-topText8').removeClass('is-active');
 		$('.change-lang').addClass('dis-active');
+		$('body').removeClass('scroll');
+		function pauseVisitka() {
+			$('.image-item1, .image-item2, .image-item3, .image-item4, .image-item6, .image-item7, .image-item8, .textLeft2, .textLeft3, .textLeft4, .textLeft6, .textLeft7, .textLeft1, .textLeft8, .textRight2, .textRight3, .textRight4, .textRight6, .textRight7, .textRight1, .textRight8').removeClass('is-active');
+			$('.image-visitka, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft7, .textRight7, .textLeftNone, .textRightNone').addClass('is-active');
+			$('.header-left, .footer-right').removeClass('is-active');
+		};
+		setTimeout(pauseVisitka, 500);
+		function pauseVisitka1() {
+			$('.footer-left, .header-right, .footer-leftBottom, .header-rightTop').removeClass('is-active');
+			$('.menu-topVisitka, .menuBottomVisitka, .menu-bottomVis, .menu-topTextVis').addClass('is-active');
+			$('.change-lang').removeClass('dis-active');
+		};
+		setTimeout(pauseVisitka1, 1000);
+	});
+});
+
+$(document).ready(function() {
+	$('.slide8, .menu-topText1, .menu-bottomVis, .menu-topTextNone').click(function (event) {
+		$('.slide8, .header-left, .footer-left, .header-right, .footer-right, .menu-bottomTextNone, .menu-topTextNone').addClass('is-active');
+		$('.slide2, .slide3, .slide4, .slide6, .slide7, .slideVisitka, .slide1, .menu-bottomText1, .menu-bottomText2, .menu-bottomText3, .menu-bottomText4, .menu-bottomText6, .menu-bottomText7, .menu-bottomVis, .menu-bottomText8, .menu-topText1, .menu-topText2, .menu-topText3, .menu-topText4, .menu-topText6, .menu-topText7, .menu-topTextVis, .menu-topText8').removeClass('is-active');
+		$('.change-lang').addClass('dis-active');
+		$('body').addClass('scroll');
 		function pause8() {
-			$('.image-item1, .image-item2, .image-item3, .image-item4, .image-item6, .image-item7, .textLeft2, .textLeft3, .textLeft4, .textLeft6, .textLeft7, .textLeft1, .textRight2, .textRight3, .textRight4, .textRight6, .textRight7, .textRight1').removeClass('is-active');
+			$('.image-item1, .image-item2, .image-item3, .image-item4, .image-item6, .image-item7, .image-visitka, .textLeft2, .textLeft3, .textLeft4, .textLeft6, .textLeft7, .textLeft1, .textRight2, .textRight3, .textRight4, .textRight6, .textRight7, .textRight1').removeClass('is-active');
 			$('.image-item8, .image-itemNone, .footer-leftBottom, .header-rightTop, .textLeft8, .textRight8, .textLeftNone, .textRightNone').addClass('is-active');
 			$('.header-left, .footer-right').removeClass('is-active');
 		};
@@ -221,6 +249,10 @@ const langArr = {
 	"title": {
 		"ru": "Приглашение на свадьбу",
 		"ua": "Запрошення на весілля",
+	},
+	"big": {
+		"ru": "Александр + Наталья =<br>свадьба!!!",
+		"ua": "Олександр + Наталя =<br>весілля!!!",
 	},
 };
 select.addEventListener('change', changeURLLanguage);
